@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.PS_container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: hsl(218, 24%, 16%);
+  overflow: hidden;
+}
+
+.cards {
+  width: 38vw;
+  height: 38vh;
+  background: hsl(217, 19%, 24%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0.5px 0px 0px 10px rgba(164, 165, 210, 0.708);
+  box-sizing: content-box;
+  padding: auto;
+  font-family: Roboto;
+}
+
+.adviceno {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-top: 1.5rem;
+  color: lightgreen;
+  letter-spacing: 4.5px;
+}
+.advice {
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding-top: 1.5rem;
+  color: rgb(153, 152, 152);
+  letter-spacing: 5px;
+}
+
+.quote {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  text-align: center;
+  padding-top: 0.5rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.divider {
+  background: url("images\pattern-divider-desktop.svg") no-repeat center;
+  background-size: cover;
+  height: 15px;
+  width: 80%;
+}
+
+.changeicon {
+  padding-top: 0.2rem;
+  position: absolute;
+  align-items: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+}
+
+.change {
+  position: relative;
+  bottom: -25px;
+  left: -10px;
+  transform: translate(10%);
+  padding: 25px;
+  background: hsl(150, 100%, 60%);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.change:hover {
+  background: #f2f924d5;
+  transition: all 0.3s ease;
+}
+
+#image {
+  height: 100vh;
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+}
+
+/* Responsivness */
+@media screen and (max-width: 325px) {
+  .PS_container {
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    justify-self: center;
+    width: 100%;
+    margin: 0 auto;
+    height: 90vh;
+  }
+  .adviceno {
+    font-size: 0.6rem;
+  }
+  .divider {
+    background: url("images\pattern-divider-mobile.svg") no-repeat center;
+    height: 20px;
+    width: 80%;
+  }
+  .cards {
+    width: 90vw;
+    height: 50vh;
+  }
+  .advice {
+    font-size: 0.6rem;
+    font-weight: 50;
+  }
+  .changeicon {
+    width: 40px;
+    height: 40px;
+  }
+}

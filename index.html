@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link href="	https://api.adviceslip.com/advice/{slip_id}" />
+    <link
+      href="https://api.unsplash.com/photos/?client_id=IQAwIfFqmehe6wJurczeh7jMGWTqjIZm42zn7H8ApX0"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+  </head>
+  <title>Frontend Mentor | Advice generator app</title>
+
+  <body>
+    <div class="PS_container">
+      <div class="cards">
+        <p class="adviceno">ADVICE ###</p>
+        <div class="quote">
+          <p class="advice">Click on the button to get your advice!</p>
+        </div>
+        <div class="divider"></div>
+        <div id="image"></div>
+        <div class="change">
+          <img src="images\icon-dice.svg" class="changeicon" />
+        </div>
+      </div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Prerna Sharma</a>.
+    </div>
+  </body>
+
+  <script src="script.js"></script>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</html>
