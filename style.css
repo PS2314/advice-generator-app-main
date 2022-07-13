@@ -6,7 +6,7 @@
 
 .PS_container {
   width: 100vw;
-  height: 100vh;
+  height: 95vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -16,8 +16,8 @@
 }
 
 .cards {
-  width: 38vw;
-  height: 38vh;
+  width: 50vw;
+  height: 50vh;
   background: hsl(217, 19%, 24%);
   color: white;
   display: flex;
@@ -26,9 +26,9 @@
   text-align: center;
   align-items: center;
   border-radius: 10px;
-  box-shadow: 0.5px 0px 0px 10px rgba(164, 165, 210, 0.708);
-  box-sizing: content-box;
-  padding: auto;
+  box-shadow: 0.7px 0.5px 10px 0.5px rgba(164, 165, 210, 0.708);
+  box-sizing: border-box;
+  padding: 10px 10px 0px 10px;
   font-family: Roboto;
 }
 
@@ -36,9 +36,7 @@
   font-size: 1.2rem;
   font-weight: bold;
   padding: 70px 0;
-
   text-align: center;
-
   padding-top: 1.5rem;
   color: rgb(202, 50, 121);
   letter-spacing: 4.5px;
