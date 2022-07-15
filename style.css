@@ -130,6 +130,10 @@
   .quote {
     height: 10%;
     width: 80%;
+    padding-top: 100px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    padding-left: 80px;
     display: flex;
     text-align: center;
     padding-top: 0.5rem;
